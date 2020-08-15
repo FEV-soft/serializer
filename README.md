@@ -7,11 +7,8 @@ Installation
 For using this library just execute the following command
 
 ```bash
-$ composer create-project greeflas/default-project project-name
+$ composer require fev/serializer
 ```
-
-> NOTE: You can add `--no-dev` right after `create-project` flag if you don't want to install dev dependencies to your project
-
 Usage
 -----
 
@@ -23,9 +20,19 @@ For usage this library you need use 2 clases:
 
 both classes have 2 general methods:
 
-`SerializeToFormat` and `UnserializeFromEncodedFormat` 
+`SerializeToFormat` and `UnserializeFromEncodedFormat`
+
+`SerializeToFormat($data)` - encode you data.
+
+`UnserializeFromEncodedFormat($str)` - decode you data.  
 
 XML not implement yet.
+
+Extension
+---------
+
+For extended this library create new class from class `AbstractSerialize`
+and define 2 general methods `SerializeToFormat` and `UnserializeFromEncodedFormat` for you type of data.
 
 Tests
 -----
