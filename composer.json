@@ -1,0 +1,42 @@
+{
+  "name": "fev/serializer",
+  "description": "Simple library for serialize JSON, YAML, XML .",
+  "keywords": ["project", "template", "structure", "skeleton", "phpunit"],
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "FEV",
+      "email": "trafaret@trafaret.kiev.ua",
+      "role": "Maintainer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "^7.4",
+    "ext-yaml": "^2.1",
+    "symfony/yaml": "^5.1"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.14"
+  },
+  "autoload": {
+    "psr-4": {
+      "FEV\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FEV\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "cs-check": "php-cs-fixer fix --allow-risky=yes --diff --ansi --dry-run",
+    "cs-fix": "php-cs-fixer fix --allow-risky=yes --diff --ansi",
+    "tests": "phpunit --colors=always"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
