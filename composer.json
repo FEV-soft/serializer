@@ -1,7 +1,7 @@
 {
   "name": "fev/serializer",
-  "description": "Simple library for serialize JSON, YAML, XML .",
-  "keywords": ["project", "template", "structure", "skeleton", "phpunit"],
+  "description": "Simple library for serialize/un(de)serialize JSON, YAML, XML.",
+  "keywords": ["serializer", "serialize", "unserialize", "JSON", "YAML", "XML"],
   "type": "project",
   "license": "BSD-3-Clause",
   "authors": [
@@ -15,7 +15,6 @@
   "require": {
     "php": ">=7.4",
     "ext-json": "^7.4",
-    "ext-yaml": "^2.1",
     "symfony/yaml": "^5.1"
   },
   "require-dev": {
@@ -33,8 +32,7 @@
   },
   "scripts": {
     "cs-check": "php-cs-fixer fix --allow-risky=yes --diff --ansi --dry-run",
-    "cs-fix": "php-cs-fixer fix --allow-risky=yes --diff --ansi",
-    "tests": "phpunit --colors=always"
+    "cs-fix": "php-cs-fixer fix --allow-risky=yes --diff --ansi"
   },
   "config": {
     "sort-packages": true

@@ -17,27 +17,4 @@ class Person
         $this->gender = $gender;
     }
 
-//    public function changeName($newFirstName, $newLastName)
-//    {
-//        $this->validateNewName($newFirstName, $newLastName);
-//
-//        $this->firstName = $newFirstName;
-//        $this->lastName = $newLastName;
-//    }
-
-    public function displayFirstName()
-    {
-        echo $this->firstName . PHP_EOL;
-    }
-
-//    private function validateNewName($newFirstName, $newLastName)
-//    {
-//        if (
-//            $this->firstName === $newFirstName
-//            && $this->lastName === $newLastName
-//        ) {
-//            throw new InvalidChangeNameRequestException();
-//        }
-//    }
-
 }
